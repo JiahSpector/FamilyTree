@@ -13,6 +13,27 @@
         Completed by Jiah Spector 3/9/2026 in util.js
  + Link otherselves in tab
         Dont know what this means tbh
-
  + Smaller horizontal window size breaks sib placement
         Doesn't seem to have this issue anymore so done?
+
+Jiah Proposed changes:
+ + Add log in system
+    ~debating whether to create full on login system or a simple shared password
+    + Everything secure so no changes can be made to the sheet
+ + Add Admin Panel
+    + Brother Management:
+        + Add/Remove tags
+        + Manage Name, initiate class, big, etc.
+    + Tag Management:
+        + Add tags:
+        + Upload image to make into a icon
+            + Ability to resize and crop image right there
+        + Archive Tags
+            + Dissallow Deletion of Tags
+        + Bring Tags Out of Archive
++ Overhaul sheet system
+    + If using admin panel, get rid of online sheet and have a local xlsx instead
+        + If using this, have an option to maunually update spreadsheet just in case something becomes bugged
+    
+
+        

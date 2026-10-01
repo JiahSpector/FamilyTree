@@ -97,6 +97,20 @@ function applySettings() {
             rule += "}"
 
             stylesheet.insertRule(rule, stylesheet.cssRules.length)
+
+            // If it's a cabinet, make the rule stronger so it overrides other rules
+            if (cleanStr(tag.name).toLowerCase() == "cabinet") {
+                let cls = cleanStr(tag.name)
+                let strongRule = rule
+                    .replace("." + cls + " {", "button.name." + cls + " {")
+                    .replace(/;\n/g, " !important;\n")
+                stylesheet.insertRule(strongRule, stylesheet.cssRules.length)
+
+                stylesheet.insertRule(
+                    "button.name." + cls + " { border-color: #7B2FBE !important; }",
+                    stylesheet.cssRules.length
+                )
+            }
         }
         if (tag.type.includes("HOUSE")) {
             rule = "." + cleanStr(tag.name) + ".line {\n"
