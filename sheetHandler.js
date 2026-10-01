@@ -86,7 +86,7 @@ window.appElement = {
 function getSheetValues() {
     console.log("Getting sheet values...");
 
-    var spreadsheetId = '1Ep5BEB79E5VgSY7JnK971dlidknzGFI3VNQFncPMEcA';
+    var spreadsheetId = '1dW6I1nTKS4_4_DcpUugcwhCZAbezlo_6LZZ-GaWBE1E';
     var ranges = [
         'Siblings!A2:H',
         'Size Settings!A2:B',
